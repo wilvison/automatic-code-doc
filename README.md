@@ -8,17 +8,13 @@ Framework open-source para comparação de modelos de IA generativa na documenta
 ## Estrutura do Projeto
 ```
 📦automatic-code-doc/
-├──📜 README.md
-├──📜 LICENSE
 ├──📂 gui/
-│   ├──📜 index.html
-│   └──📂 api/
-│       ├──📜 server.js
-│       └──📂 routes/
-│           ├──📜 gpt4.js
-│           ├──📜 llama.js
-│           ├──📜 claude.js
-│           └──📜 gemini.js
+│   └──📜 index.html
+├──📂 routes/
+│   ├──📜 gpt4.js
+│   ├──📜 llama.js
+│   ├──📜 claude.js
+│   └──📜 gemini.js
 ├──📂 evaluation/
 │   ├──📜 analysis.ipynb
 │   ├──📜 results.csv
@@ -36,9 +32,15 @@ Framework open-source para comparação de modelos de IA generativa na documenta
 │   └──📂 assets/
 │       ├──📜 logo.png
 │       └──📜 architecture.png
-├──📜 docker-compose.yml
+├──📜 server.js
 ├──📜 Dockerfile
-└──📜 .env.example
+├──📜 docker-compose.yml
+├──📜 package.json
+├──📜 .env.example
+└──📜 LICENSE
+├──📜 README.md
+├──📜 LICENSE
+
 ```
 
 ## Funcionalidades
