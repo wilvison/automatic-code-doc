@@ -1,0 +1,5 @@
+model,code_sample,generated_doc,gold_doc
+gpt4,1,"Função de ordenação implementada em Python...", "Implementação do Bubble Sort..."
+llama,2,"Função assíncrona para requisições...", "Função para buscar dados..."
+claude,3,"Algoritmo de busca binária...", "Busca eficiente em arrays ordenados..."
+gemini,4,"Classe para processamento de dados...", "Módulo de ETL básico..."
