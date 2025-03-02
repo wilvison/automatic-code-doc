@@ -64,3 +64,16 @@ Configurar como
 Inicie com Docker
 ```
 1 docker-compose up --build
+```
+## Citação
+
+Se você usar este projeto em sua pesquisa, por favor cite:
+
+```
+@article{https://www.linkedin.com/in/wilvison,
+  title={AutoDocGen: Documentação Automática de Código com IA Generativa},
+  author={Wilvison Ralis},
+  journal={Proceedings of the IEEE},
+  year={2025}
+}
+```
