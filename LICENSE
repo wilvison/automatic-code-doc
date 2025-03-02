@@ -1,0 +1,28 @@
+
+**Arquivo server.js Completo:**
+```javascript
+const express = require('express');
+const rateLimit = require('express-rate-limit');
+const { gpt4Route } = require('./routes/gpt4');
+const { llamaRoute } = require('./routes/llama');
+const { claudeRoute } = require('./routes/claude');
+const { geminiRoute } = require('./routes/gemini');
+
+const app = express();
+app.use(express.json());
+
+// Rate limiting
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100
+});
+app.use('/api', apiLimiter);
+
+// Rotas
+app.use('/api/gpt4', gpt4Route);
+app.use('/api/llama', llamaRoute);
+app.use('/api/claude', claudeRoute);
+app.use('/api/gemini', geminiRoute);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
