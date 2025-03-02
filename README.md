@@ -51,21 +51,26 @@ Framework open-source para comparação de modelos de IA generativa na documenta
 ✅ Sistema de rate limiting  
 
 ## Instalação
-Clone o repositório
-```bash
-git clone https://github.com/seu-usuario/automatic-code-doc.git
-cd automatic-code-doc
-```
+# Instruções para Execução
 
-Configurar como
+1 - Instalar as dependências:
 ```
-1 cp .env.example .env
-2 # Preencha as chaves no arquivo .env
+npm install
 ```
+2 - Configure como variáveis ​​de ambiente:
+```
+cp .env.example .env  //Preencha as chaves no arquivo .env
+```
+3 - Execute o servidor:
+```
+npm run dev  //Modo desenvolvimento
+ou
+docker-compose up  //Com Docker
 
-Inicie com Docker
 ```
-1 docker-compose up --build
+4 - Acesse a interface:
+```
+http://localhost:3000
 ```
 ## Citação
 
